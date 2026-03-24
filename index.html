@@ -52,6 +52,7 @@ h1 {
     gap: 12px;
 }
 
+/* Base button */
 button {
     height: 60px;
     border: none;
@@ -65,7 +66,7 @@ button:active {
     transform: scale(0.95);
 }
 
-/* Button Styles */
+/* Styles */
 .num {
     background: #2e2e2e;
     color: white;
@@ -84,6 +85,11 @@ button:active {
 .equal {
     background: #34c759;
     color: white;
+    grid-row: span 2;
+    height: 100%;
+}
+
+.zero {
     grid-column: span 2;
 }
 
@@ -121,7 +127,7 @@ button:hover {
             <button class="num" onclick="append('2')">2</button>
             <button class="num" onclick="append('3')">3</button>
 
-            <button class="num" onclick="append('0')">0</button>
+            <button class="num zero" onclick="append('0')">0</button>
             <button class="num" onclick="append('.')">.</button>
         </div>
     </div>
